@@ -1474,6 +1474,11 @@ react-dom@17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
+react-hover-image@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-hover-image/-/react-hover-image-2.0.1.tgz#d21c729d520cb5c70e1a632afe14434eb834236f"
+  integrity sha512-eamAKxOQAHfAqYuFPU+RGCOradhFLv9HCVKnKKJqTZPMS+P7H3q8xJq0ZZ3TKr3rtNJOI1Ha6RZPuCfPNuadWg==
+
 react-is@16.13.1, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"

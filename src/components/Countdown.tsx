@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { CountdownContext } from '../contexts/CountdownContext';
 import styles from '../styles/components/Countdown.module.css'
+import HoverImage from 'react-hover-image'
 
 export function Countdown(){
     const {
@@ -36,7 +37,7 @@ export function Countdown(){
                  className={styles.countdownButton}
                  >
                      Ciclo encerrado
-                     <img src="icons/check_circle.svg" alt="check_circle"/> 
+                     <img className={styles.imgFinishedButton}  src="icons/check_circle.svg" alt="check_circle"/> 
                      
                  </button> 
             ) : (
@@ -48,7 +49,7 @@ export function Countdown(){
                     onClick={resetCountdown}
                     >
                         Abandonar ciclo
-                        
+                        <img className={styles.imgCancelButton} src="icons/close.svg" alt="fechar"/>
                     </button> 
                 ) : (
                     <button 
@@ -57,6 +58,7 @@ export function Countdown(){
                     onClick={startCountdown}
                     >
                     Iniciar um ciclo
+                    <img className={styles.imgStartButton} src="icons/play_arrow.svg" alt="iniciar"/>
                       
                     </button>
                 ) }

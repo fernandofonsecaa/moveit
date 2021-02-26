@@ -74,6 +74,11 @@
     color: var(--white);
 }
 
+.countdownButtonActive:not(:disabled):hover img{
+    filter: brightness(0) invert(1);
+}
+
+
 .countdownButton:disabled{
     background: var(--white);
     color: var(--text);
@@ -81,6 +86,15 @@
     border-bottom: 4px solid var(--green);
 }
 
-.countdownButton img {
+.imgStartButton{
     margin-left: 1rem;
+}
+
+.imgFinishedButton {
+    margin-left: 1rem;
+}
+
+.imgCancelButton {
+    margin-left: 0.5rem;
+    
 }
